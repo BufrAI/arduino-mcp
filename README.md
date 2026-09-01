@@ -1,5 +1,7 @@
 # arduino-mcp
 
+![License](https://img.shields.io/github/license/BufrAI/arduino-mcp) ![Release](https://img.shields.io/github/v/tag/BufrAI/arduino-mcp?label=release) ![Node](https://img.shields.io/badge/node-%3E%3D20-blue)
+
 Local **stdio** MCP server that wraps [`arduino-cli`](https://arduino.github.io/arduino-cli/) so agents can detect boards, manage cores/libraries, compile/upload sketches, and talk serial — without shell gymnastics.
 
 Built as a **standalone** package (reuse across projects). Designed with Ratchet (a companion robotics project) in mind — Uno + Portenta, 115200 UART — but not coupled to that firmware tree.
