@@ -1,0 +1,37 @@
+{
+  "name": "arduino-mcp",
+  "version": "0.1.0",
+  "description": "Local stdio MCP server wrapping arduino-cli for board detect, compile, upload, and serial I/O",
+  "type": "module",
+  "bin": {
+    "arduino-mcp": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "smoke": "tsx scripts/smoke.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "mcp",
+    "arduino",
+    "arduino-cli",
+    "model-context-protocol"
+  ],
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.25.0",
+    "serialport": "^13.0.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}
