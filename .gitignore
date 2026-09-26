@@ -9,3 +9,6 @@ build/
 *.elf
 .vscode/
 .idea/
+# .bufr: runtime ignored, config tracked (custodian pass 2026-09-25)
+.bufr/*
+!.bufr/config/
